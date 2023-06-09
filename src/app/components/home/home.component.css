@@ -1,0 +1,162 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #095173;
+    padding: 10px;
+  }
+  
+  .logo  {
+    font-weight: bolder;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: larger;
+    color: #fff;
+  }
+  
+
+  .img {
+    background-image: url('https://www.shutterstock.com/image-illustration/3d-techno-neon-blue-glowing-260nw-1494925625.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 93%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+
+  form {
+    width: 410px;
+    margin: 4px 53px 0px auto;
+    padding: 31px;
+    border-radius: 15px;
+    background-color: #474c4d;
+    box-shadow: 0px 0px 6px 4px rgb(249 246 246);
+  }
+  
+  /* Style for the header */
+  h4 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #0c0c0c;
+    text-align: center;
+    font-family: fangsong;
+    margin-bottom: 35px;
+  }
+  
+  /* Style for the input fields */
+  label {
+    font-family: emoji;
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 5px;
+  }
+  
+  input[type="email"],
+  input[type="password"] {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  /* Style for the login button */
+  button {
+    display: block;
+    width: 30%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 21px;
+    font-family: ui-serif;
+    font-weight: bold;
+    color: #fff;
+    background-color: #315e82;
+    cursor: pointer;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+
+  button:hover{
+    background-color: rgb(172, 172, 215);
+    color: #0c0c0c;
+  }
+  
+  /* Style for the link to signup page */
+  a[routerLink="/sing-up"] {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  a[routerLink="/singup"] span {
+    font-weight: bold;
+  }
+  
+  /* Style for the link to forgot password page */
+  a[routerLink="/forget-password"] {
+    color: #333;
+    text-decoration: none;
+    float: right;
+  }
+  
+
+
+
+
+  /* .nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin-left: 10px;
+  }
+  
+  .nav-links a {
+    color: #fff;
+    font-size: medium;
+    text-decoration: none;
+    padding: 5px 10px;
+  }
+  
+  .nav-links a:hover {
+    background-color: #18d1e9;
+    padding: 9px;
+    border: 1px solid black;
+    color: black;
+  }
+   */
+
+
+   .invalid-feedback {
+    color: red;
+    margin-top: 5px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    color: #fff;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0069d9;
+    border-color: #0062cc;
+    color: #fff;
+  }
+
+  

@@ -1,0 +1,54 @@
+
+<div class="img">
+    <div class="navbar">
+        <div class="logo">
+          PLAY THIS QUIZ??
+        </div>
+        <ul class="nav-links">
+                <li><a routerLink="/crud">Crud</a></li>
+                <li><a routerLink="/questions">Questions</a></li>
+                <li><a routerLink="/quizz">Quiz</a></li>
+                <li><a routerLink="/play">Play</a></li>
+                <li><a routerLink="/logout">Logout</a></li>
+
+        </ul>
+      </div>
+</div>
+    
+    <!-- for cover page -->
+    <!-- <div class="heading">
+      <h1 > START NEW QUIZZ </h1>
+    </div> -->
+    
+    
+<div class="form-container">
+  <form>
+
+    <div class="heading">
+      <h1 > START NEW QUIZZ </h1>
+    </div>
+
+    <div>
+      <label for="title">Quiz Title:</label>
+      <input type="text" id="title" [(ngModel)]="quiztitle" name="quiztitle" required>
+    </div>
+    <div>
+      <label for="description">Quiz Description:</label>
+      <textarea id="description" [(ngModel)]="quizDescription" name="quizDescription" required></textarea>
+    </div>
+    <div>
+      <label for="date">Creation Date:{{creationDate}}</label>
+      <input type="datetime-local" [(ngModel)]="creationDate" name="creationDate" required>
+    </div>
+    <div>
+      <label for="coverPicture">Cover Picture:</label>
+      <input class="cf" type="file" id="coverPicture" (change)="upload($event)" required>
+      <button (click)="uploadImage()" class="uploadImage">Upload image</button>
+    </div>
+    <br>
+    <button class="submit" type="submit" [disabled]="!quiztitle || !quizDescription || !creationDate || !imageUrl"
+      (click)="onSubmit()">Submit</button>
+
+      <button class="submit" routerLink="questions">Next</button>
+  </form>
+</div>

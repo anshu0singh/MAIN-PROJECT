@@ -1,0 +1,53 @@
+.img {
+    background-image: url('https://www.shutterstock.com/image-illustration/3d-techno-neon-blue-glowing-260nw-1494925625.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #095173;
+    padding: 10px;
+    width: 100rem;
+    margin: 0px 0px 613px 0px;
+  }
+  
+  .logo  {
+    font-weight: bolder;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: larger;
+    color: #fff;
+  }
+  
+
+ .nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    font-weight: bolder;
+  }
+  
+  .nav-links li {
+    margin-left: 10px;
+  }
+  
+  .nav-links a {
+    color: #fff;
+    font-size: medium;
+    text-decoration: none;
+    padding: 5px 10px;
+  }
+  
+  .nav-links a:hover {
+    background-color: #18d1e9;
+    padding: 8px;
+    border: 1px solid black;
+    color: black;
+  }

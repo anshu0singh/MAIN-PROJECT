@@ -1,0 +1,46 @@
+
+<div class="navbar">
+    <div class="logo">
+      PLAY THIS QUIZ??
+    </div>
+    
+  </div>
+  
+  <div class="img">
+
+    <div class="container-fluid">
+        <div class="row mt-5">
+          <div class="col-4">
+            <div class="card-shadow">
+              <div class="card-body">
+                <form>
+                  <div class="nb-3">
+                    <h4>Signup</h4>
+                  </div>
+                  <div class="nb-3">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="email" class="form-control" name="email" id="exampleInputEmail1" [(ngModel)]="email" aria-describedby="emailHelp" placeholder="Enter email">
+                  </div>
+                  <div class="nb-3">
+                    <label for="exampleInputPassword1">Enter password</label>
+                    <input type="password" class="form-control" name="password" id="exampleInputPassword1" [(ngModel)]="password" aria-describedby="emailHelp" placeholder="Enter password">
+                  </div>
+                  <button type="button"(click)="signup()" routerLink="/home" class="btn btn-info">Signup</button>
+                  <div class="row">
+                    <div class="col-12">
+                      <a [routerLink]="['/home']" style="text-decoration:none;margin: 80px;">Already have an account?<span class="text-danger"> login here</span></a>
+                    </div>
+                    
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+       
+      
+      
+      
+
+</div>

@@ -1,0 +1,33 @@
+<!-- <div class="img">
+    <div class="navbar">
+        <div class="logo">
+          CREATE QUIZ...
+        </div>
+        <ul class="nav-links">
+            <li><a routerLink="/questions">Back</a></li>
+
+        </ul>
+      </div>
+</div>
+
+<div class="card-container"  >
+  
+  
+    <div *ngFor="let item of quiz | async" class="card">
+      <div class="image">
+        <img [src]="item.coverImageUrl" alt="Console Image">
+      </div>
+      <div class="content">
+        <h3>{{ item.quizTitle }}</h3>
+       <p>{{ item.description }}</p>
+        <p>Creation Date: {{ item.creationDate }}</p>
+       
+       
+      </div>
+      <div class="action">
+      
+        <button style="height: 30px; width: 60px;background-color: rgb(17 98 76);
+        color: white;margin: -10px;" (click)="goToplaypage(item.id)">{{item.docId}}Play</button>
+      </div>
+    </div>
+  </div> -->

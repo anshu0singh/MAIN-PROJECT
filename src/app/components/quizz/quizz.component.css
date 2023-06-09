@@ -1,0 +1,117 @@
+.img {
+    background-image: url('https://www.shutterstock.com/image-illustration/3d-techno-neon-blue-glowing-260nw-1494925625.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #095173;
+    padding: 10px;
+    width: 100rem;
+    margin: 0px 0px 613px 0px;
+  }
+  
+  .logo  {
+    font-weight: bolder;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: larger;
+    color: #fff;
+  }
+  
+
+ .nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    font-weight: bolder;
+  }
+  
+  .nav-links li {
+    margin-left: 10px;
+  }
+  
+  .nav-links a {
+    color: #fff;
+    font-size: medium;
+    text-decoration: none;
+    padding: 5px 10px;
+  }
+  
+  .nav-links a:hover {
+    background-color: #18d1e9;
+    padding: 8px;
+    border: 1px solid black;
+    color: black;
+  }
+
+
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  margin-left: 10px;
+  }
+
+  .card {
+    width: 190px;
+    height: 235px;
+    margin: 15px;
+    padding: 8px;
+    border: 3px solid #93dfcbc7;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px 5px rgb(237 241 241);
+    background-color: #f7fcfc;
+  }
+
+  .card .image {
+    text-align: center;
+  }
+
+  .card .image img {
+    width: 100%;
+    height: 90px; 
+    object-fit: cover;
+    border-radius: 5px;
+  }
+
+  .card .content {
+    padding: 10px 0;
+    text-align: center;
+  }
+
+  .card h3 {
+    font-size: 22px;
+    margin: 0;
+    margin-bottom: 5px;
+  }
+
+  .card p {
+    font-size: 12px;
+    margin: 0;
+    margin-bottom: 10px;
+    color: #604e4e;
+
+  }
+
+  .card .action {
+    text-align: center;
+  }
+
+  .card button {
+    padding: 5px 10px;
+    background-color: rgb(59, 164, 136);
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-right: 5px;
+  }

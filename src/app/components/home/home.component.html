@@ -1,0 +1,70 @@
+
+  <div class="navbar">
+    <div class="logo">
+      PLAY THIS QUIZ??
+    </div>
+    <ul class="nav-links">
+        <!-- <li><a routerLink="/">Home</a></li>
+        <li><a routerLink="/crud">Crud</a></li>
+        <li><a routerLink="/cover-page">Cover-Page</a></li>
+        <li><a routerLink="/questions">Question</a></li> -->
+        <!-- <li><a routerLink="/sign-up">Sign-Up</a></li> -->
+    </ul>
+  </div>
+  
+  <div class="img">
+
+    <!-- login page -->
+
+    <div class="container-fluid">
+      <div class="mt-5">
+          <div class="col">
+              <div class="col-4">
+                  <div class="card-shadow" >
+                      <div class="card-body">
+                          <form action="">
+                              <div class="mb-3">
+      
+                                 <h4>Login...</h4>
+                              </div>
+                              <div>
+                                  <label for="exampleInputEmail1">Email Address </label>
+                                  <input type="email" class="form-controll" id="exampleInputEmail1" name="email" [(ngModel)]="email" aria-describedby="emailHelp" placeholder="enter your email">
+                              </div>
+                              <div>
+                                  <label for="exampleInputEmail1">Enter Password </label>
+                                  <input type="password"  class="form-controll" id="exampleInputEmail1" name="password" [(ngModel)]="password" aria-describedby="emaillHelp" placeholder="enter your password">
+                              </div>
+                              <button type="button" (click)="login()" routerLink="/cover-page" class="btn btn-info"> Login</button>
+                              <div class="row">
+                                  <div class="col-7">
+                                      <a [routerLink]="['/sign-up']" style="text-decoration:none ;color: white;
+                                      margin: auto;
+                                      font-family: Georgia, 'Times New Roman', Times, serif;
+                                      font-weight: bold;
+                                      font-size: medium;
+                                      ">Create a New  Account !</a>
+                                  </div>
+                                  <div class="col-5">
+                                      <a routerLink="/forget-password" style="text-decoration:none ; color: antiquewhite;margin:-19px 0px 0px auto;">Forgot Password ?</a>
+                                  </div>
+                              </div>
+                          </form>
+                      </div>
+      
+                  </div>
+      
+              </div>
+      
+          </div>
+      </div>
+      </div>
+       
+        
+      
+    
+    </div>
+    
+
+ 
+  

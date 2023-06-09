@@ -1,0 +1,70 @@
+<div class="navbar">
+    <div class="logo">
+      PLAY THIS QUIZ??
+    </div>
+
+    <ul class="nav-links">
+            <li><a routerLink="/cover-page">Back</a></li>
+
+    </ul>
+    
+  </div>
+  
+  <div class="img">
+
+
+
+
+<form #f="ngForm" (ngSubmit) = "addData(f)">
+    <h1> Add Student Details</h1>
+   <br>
+   <div class="mb-3">
+   <input type="text" pattern="[a-zA-Z  ]+$" #username="ngModel" name="name" placeholder="name" [(ngModel)]="name" class="hover-style" required minlength="4">
+   <span *ngIf="username.invalid && username.touched" style="color: darkred;">please enter a valid Name</span>
+  </div>
+   
+  <div class="mb-3">
+   <input type="email" #useremail="ngModel"  name="email" placeholder="email" [(ngModel)]="email" class="hover-style" required email>
+   <span *ngIf="useremail.invalid && useremail.touched" style="color: darkred;">please enter a valid Email</span>
+  </div>
+  
+  <div class="mb-3">
+   <input type="tel"  #usernumber="ngModel"  name="number" placeholder="number" [(ngModel)]="number" class="hover-style" required  pattern="[0-9]+$" minlength="10" >
+   <span *ngIf="usernumber.invalid && usernumber.touched" style="color: darkred;">please enter a valid Number</span>
+  </div>
+   <br>
+   <!-- <button type="submit"  *ngIf="!update_Id">save data</button> -->
+   <button type="submit" [disabled]="!f.valid" [ngClass]="{ 'disabled-btn': !f.valid }" *ngIf="!update_Id">Save data</button>
+   <button  *ngIf="update_Id" type="submit">update data </button>
+   
+   </form>
+   
+  
+   
+   <table>
+     <thead>
+       <tr>
+         <!-- <th>ID</th> -->
+         <th>Name</th>
+         <th>Email</th>
+         <th>Number</th>
+         <th id="action">Update</th>
+         <th>Delete</th>
+       
+       </tr>
+     </thead>
+     <tbody>
+       <tr *ngFor="let data of userData | async">
+         <!-- <td>{{ data.id }}</td> -->
+         <td>{{ data.name }}</td>
+         <td>{{ data.email }}</td>
+         <td>{{ data.number }}</td>
+         <td><button  (click)="updateData(data,'update')">Edit</button></td>
+         <td><button  (click)="deleteData(data.id)">Delete</button></td>
+         </tr>
+         </tbody>
+   
+   </table>
+
+</div>
+  

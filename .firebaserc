@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "audio-video-playable": {
+      "hosting": {
+        "main_project": [
+          "audio-video-playable"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "audio-video-playable"
+  }
+}
